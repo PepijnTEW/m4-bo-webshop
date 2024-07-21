@@ -1,0 +1,325 @@
+html{
+    font-size: 62.5%;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+main{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .8);
+    padding: .7rem;
+    font-size: 1.2rem;
+}
+
+.main--navigation{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, .58) 100%);
+    font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index:1;
+}
+.navigation--info{
+    background: rgba(41, 41, 41, 0.8);
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation--info-link{
+    font-size: 1.2rem;
+    position: relative;
+    left: 36rem;
+}
+.navigation--top{
+    height: 7.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navigation--container{
+    position: relative;
+    left: 36rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    height: 100%;
+}
+.logo{
+    height: 5rem;
+}
+.searchbar{
+    display: flex;
+    height: 4rem;
+    width: 60rem;
+}
+.searchbar--search{
+    color: white;
+    background: #707070;
+    width: 56rem;
+    border-radius: .4rem 0 0 .4rem;
+    border-style: none;
+}
+.searchbar--search:hover{
+    background:white ;
+    color: black;
+}
+.searchbar--icon{
+    height: 100%;
+    width: 4rem;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 .4rem .4rem 0;
+}
+.searchbar--icon > img{
+    height: 60%;
+    margin-left: .2rem;
+}
+.personal{
+    height: 100%;
+    width: 32rem;
+    background: rgba(168, 168, 168, 0.527);
+    border-radius: 0rem 0rem .5rem .5rem;
+}
+.navigation--highlights{
+    height: 3.6rem;
+    width: 100%;
+}
+.navigation--highlights-link{
+    color: rgba(255, 255, 255, .8);
+    font-size: 18px;
+    position: relative;
+    left: 36rem;
+}
+.navigation--main{
+    background: rgb(254, 191, 67);
+    display: flex;
+    height: 4.5rem;
+    align-items: center;
+    gap: 3rem;
+}
+.navigation--main-link{
+    color: black;
+    position: relative;
+    left: 36rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.navigation--main-link:hover{
+    color: #eee;
+    transition: .2s;
+}
+.main--frontpage{
+    background-image: url(/img/background.webp);
+    background-size: cover;
+    z-index:0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frontpage--items{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+.frontpage--text-background{
+    height: 35rem;
+    width: 117rem;
+    position: relative;
+    margin-top: 25rem;
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #eee;
+
+}
+.frontpage--text{
+    color: rgb(255, 255, 255);
+    font-size: 9rem;
+    margin: 0rem 0rem 0rem 4rem;
+}
+.frontpage--button{
+    width: 27rem;
+    height: 5rem;
+    background: #febf43;
+    margin-top: 2rem;
+    border-style: none;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.frontpage--button:hover{
+    color: #eee;
+    transition: .2s;
+    height: 5.5rem;
+}
+.product--page{
+    box-shadow: 0 0 10rem    rgba(0,0,0,1), 2px 2px 20rem rgba(0,0,0,1);
+    background: rgb(6, 6, 6);
+}
+.main--deal{
+    height: 80rem;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+.main--deal-listing{
+    width: 117rem;
+    background: rgb(6, 6, 6);
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    
+}
+.main--listings-tag{
+    color: #eee;
+    width: 100vw;
+}
+.main--listings-tag > p {
+    margin-left: 14rem;
+    font-size: 2rem;
+}
+.main--deal-car{
+    width: 75%;
+    min-width: 75%;
+    height: 75%;
+}
+.main--deal-items>p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+.listings--car{
+    height: 100%;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(6, 6, 6);
+}
+.listings--car>p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #eee;
+}
+.img--car{
+    padding: 2rem;
+    width: 35rem;
+}
+.main--listings{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main--listings-deals{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buybutton{
+    width: 100%;
+    height: 5rem;
+    background: #febf43;
+    margin-top: 2rem;
+    border-style: none;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.buybutton:hover{
+    color: #eee;
+    transition: .5s;
+    font-size: 3rem;
+}
+.reasons--container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reasons{
+    height: 50rem;
+    width: 35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #eee;
+}
+.img--reasons{
+    padding-top: 4rem;
+    width: 20rem;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.footer{
+    height: 30rem;
+    font-size: 2rem;
+    color: #eee;
+    background: rgb(15, 15, 15);
+
+    display: flex;
+    gap: 4rem;
+}
+.footer > ul {
+    padding: 4rem;
+}
+#products--listings{
+    padding-top: 20rem;
+    height: 150rem;
+}
+#product--listings-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 7rem;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+#product--listing{
+    padding-top: 10rem;
+    height: 89.4vh;
+}
+#car1-listing{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+}
+.top-listing{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    color: #eee;
+    font-size: 2rem;
+    width: 90vw;
+}
+.listing-left{
+    width: 50%;
+}
+.listing-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.listing-right > p{
+    width: 50%;
+}
+#car1-listing-img{
+    width: 100%;
+}
